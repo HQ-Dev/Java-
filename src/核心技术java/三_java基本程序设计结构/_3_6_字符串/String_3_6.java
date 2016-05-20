@@ -1,4 +1,4 @@
-package 核心技术java.三_java基本程序设计结构;
+package 核心技术java.三_java基本程序设计结构._3_6_字符串;
 
 import static java.lang.System.*;
 
