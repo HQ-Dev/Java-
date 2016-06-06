@@ -1,4 +1,4 @@
-package src.核心技术java.继承.inheritance;
+package src.核心技术java.五_继承.inheritance;
 
 /**
  * Created by archy on 5/27/16.

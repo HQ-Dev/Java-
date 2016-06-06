@@ -1,4 +1,4 @@
-package src.核心技术java.继承.inheritance;
+package src.核心技术java.五_继承.inheritance;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
