@@ -17,16 +17,16 @@ public class GenerateXMLMsg {
 
 
     // 创建StringWriter
-    Writer writer = new StringWriter();
-
-    // 创建转换器
-    Transformer transformer = TransformerFactory.newInstance().newTransformer();
-    transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-    transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-
-    // 转换DOM对象到XML消息（字符串形式）
-    DOMSource src = new DOMSource(document);
-    Result output = new StreamResult(writer);
-    transformer.transform(src, output);
-    String msgText = writer.toString();
+//    Writer writer = new StringWriter();
+//
+//    // 创建转换器
+//    Transformer transformer = TransformerFactory.newInstance().newTransformer();
+//    transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+//    transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+//
+//    // 转换DOM对象到XML消息（字符串形式）
+//    DOMSource src = new DOMSource(document);
+//    Result output = new StreamResult(writer);
+//    transformer.transform(src, output);
+//    String msgText = writer.toString();
 }
