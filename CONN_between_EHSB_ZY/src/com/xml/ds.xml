@@ -1,0 +1,51 @@
+<?xml version="1.0"encoding="UTF-8"?>
+<POOR_IN200901UV ITSVersion="XML_1.0" xmlns="urn:hl7-org:v3"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="urn:hl7-org:v3 POOR_IN200901UV.xsd"
+                 xmlns:namexsi="http://java.sun.com/xml/ns/j2ee">
+    <!-- 消息ID -->
+    <id root=""/>
+    <!-- 消息创建时间 -->
+    <creationTime value="20120106110000"/>
+    <!-- 消息发送系统的状态: P(Production); D(Debugging); T(Training) -->
+    <processingCode code="P"/>
+    <!-- 消息处理模式: A(Archive); I(Initial load); R(Restore from archive); T(Current
+        processing) -->
+    <processingModeCode code="R"/>
+    <!-- 消息应答: AL(Always); ER(Error/reject only); NE(Never) -->
+    <acceptAckCode code="AL"/>
+    <!-- 接受者 -->
+    <receiver typeCode="RCV">
+        <device classCode="DEV" determinerCode="INSTANCE">
+            <!-- 接受者ID -->
+            <id/>
+        </device>
+    </receiver>
+    <!-- 发送者 -->
+    <sender typeCode="SND">
+        <device classCode="DEV" determinerCode="INSTANCE">
+            <!-- 发送者ID -->
+            <id/>
+        </device>
+    </sender>
+    <!-- 封装的消息内容(按Excel填写) -->
+    <controlActProcess classCode="CACT" moodCode="EVN">
+        <subject typeCode="SUBJ">
+            <observationRequest classCode="OBS" moodCode="RQO">
+                <subject typeCode="SBJ">
+                    <patient classCode="PAT">
+                        <!--个人信息 -->
+                        <patientPerson classCode="PSN">
+                            <!--患者姓名 -->
+                            <name xsi:type="BAG_EN">
+                                <item>
+                                    <part value="张三"/>
+                                </item>
+                            </name>
+                        </patientPerson>
+                    </patient>
+                </subject>
+            </observationRequest>
+        </subject>
+    </controlActProcess>
+</POOR_IN200901UV>
