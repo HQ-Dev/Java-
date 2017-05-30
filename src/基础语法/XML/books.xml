@@ -6,10 +6,10 @@
         <year>2014</year>
         <price>89</price>
     </book>
-    <book id="2">
+    <book id="2" pages="300">
         <name>安徒生童话</name>
         <year>2004</year>
-        <price>77</price>
+        <price unit="rmb">77</price>
         <language>English</language>
     </book>
 </bookstore>
