@@ -8,8 +8,8 @@
     </book>
     <book id="2" pages="300">
         <name>安徒生童话</name>
-        <year>2004</year>
         <price unit="rmb">77</price>
+        <year>2004</year>
         <language>English</language>
     </book>
 </bookstore>
