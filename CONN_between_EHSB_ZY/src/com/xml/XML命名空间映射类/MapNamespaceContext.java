@@ -1,4 +1,4 @@
-package com.xml;
+package com.xml.XML命名空间映射类;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -13,7 +13,7 @@ import javax.xml.namespace.NamespaceContext;
  **/
 public class MapNamespaceContext implements NamespaceContext
 {
-    private Map<String, String>pairs;
+    private Map<String, String> pairs;
 
     public MapNamespaceContext()
     {

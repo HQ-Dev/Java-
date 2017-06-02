@@ -1,0 +1,24 @@
+﻿<ESBEntry>
+   <MessageHeader>
+      <Fid>功能ID（如：BS10003）</Fid>
+      <SourceSysCode>消息发送者系统</SourceSysCode>
+      <TargetSysCode>消息接收者系统</TargetSysCode>
+      <MsgDate>消息发送时间（取系统当前时间，格式：YYYY-MM-DD HH:MI:SS）</MsgDate>
+   </MessageHeader>
+   <ResponseOption>
+      <!--当请求消息中onceFlag被指定为1，onceMsgNum为一次响应消息中包含的记录数，为0时，此处为1-->
+      <onceMsgNum>一次响应消息中包含的记录数</onceMsgNum>
+      <MsgCount>一组消息的总消息数</MsgCount>
+      <CurrentNum>当前消息在该组消息中的位置，如：一个响应有5条消息，而这条消息是第2条则该值为2</CurrentNum>
+   </ResponseOption>
+   <!--当请求消息中onceFlag被指定为1，此层可包含多个Msg节点-->
+   <MsgInfo>
+      <Msg><![CDATA[……CDA/HL7标准的xml….]]></Msg>
+      <Msg><![CDATA[……CDA/HL7标准的xml….]]></Msg>
+      <Msg><![CDATA[……CDA/HL7标准的xml….]]></Msg>
+   </MsgInfo>
+   <RetInfo>
+      <RetCode>-1/0/1/-99</RetCode>
+      <RetCon>用户名密码服务匹配错误/无匹配记录/成功/其他错误</RetCon>
+   </RetInfo>
+</ESBEntry>
