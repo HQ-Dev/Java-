@@ -1,6 +1,7 @@
 package 基础语法.XML.parseXML;
 
 import org.xml.sax.SAXException;
+import 基础语法.XML.entity.Book;
 import 基础语法.XML.parseXML.hander.SAXParserHandler;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -34,6 +35,7 @@ public class SAXParse {
     public static void main(String[] args) {
         SAXParse parser = new SAXParse();
         parser.doParse();
+
     }
 
 }

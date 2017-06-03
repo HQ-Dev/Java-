@@ -1,4 +1,4 @@
-package com.request;
+package com.connect;
 
 import com.ewell.mq.queue.MessageEntity;
 import com.ewell.mq.queue.QueueTools;
@@ -18,8 +18,7 @@ import java.io.IOException;
 /**
  * @author Archy
  **/
-public class MQCommuncateRequest {
-
+public class ReceivePushMsg {
     /**
      * 根据服务 ID 将消息发送到相应队列，并返回消息 ID
      *
@@ -33,8 +32,6 @@ public class MQCommuncateRequest {
     public String putMessage(MQQueueManager qmr, String fid, String msg) throws MQException, IOException {
         return null;
     }
-
-
     /**
      * 根据服务 ID 将消息发送到相应队列，并返回消息 ID
      *
@@ -51,10 +48,12 @@ public class MQCommuncateRequest {
         return "";
     }
 
+
+
     /*******************************************************************************************************
-     * ***********************************  服务消费方请求响应场景 *************************************** *
+     * *********************************** 单向放送场景下的 服务消费方 *********************************** *
      *******************************************************************************************************/
-    private static Logger logger = LoggerFactory.getLogger(MQCommuncateRequest.class);
+    private static Logger logger = LoggerFactory.getLogger(ReceivePushMsg.class);
     // 推送数据实时监控与解析
     public static void mutiRecieveMessage() {
         // 异步消息获取对象创建
