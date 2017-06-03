@@ -23,6 +23,7 @@ public class SAXParse {
             // 创建 SAXParserHandler 对象
             SAXParserHandler handler = new SAXParserHandler();
             saxParser.parse("./src/基础语法/XML/books.xml", handler);
+            System.out.println("~~共有 " + handler.getBookList().size() + " 本书.");
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (SAXException e) {
