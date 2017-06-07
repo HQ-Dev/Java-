@@ -18,6 +18,10 @@ public class SAXParserHandler extends DefaultHandler {
     Book book = null;
     @Getter private List<Book> bookList = new ArrayList<Book>();
 
+    public List<Book> getBookList() {
+        return bookList;
+    }
+
     private int bookId = 0;
     /**
      *  用来遍历 XML 文件的开始标签
