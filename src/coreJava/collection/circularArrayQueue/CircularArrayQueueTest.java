@@ -32,7 +32,7 @@ class CircularArrayQueue<E> extends AbstractQueue<E>
 {
     private Object[] elements;
     private int head;
-    private int tail;
+    private int tail;  // 尾巴
     private int count;
     private int modcount;
 
